@@ -1,5 +1,5 @@
 function buildMetadata(sample) {
-  d3.json("samples.json").then((data) => {
+  d3.json("/static/data/samples.json").then((data) => {
     var metadata = data.metadata;
     
     // Use d3 to select the panel with id of `#sample-metadata`
@@ -19,7 +19,7 @@ function buildMetadata(sample) {
 }
 
 function buildCharts(sample) {
-  d3.json("samples.json").then((data) => {
+  d3.json("/static/data/samples.json").then((data) => {
     var samples = data.samples;
     
     // Build a Bubble Chart
@@ -120,7 +120,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("samples.json").then((data) => {
+  d3.json("/static/data/samples.json").then((data) => {
     var sampleNames = data.names;
 
     // code to populate select options
