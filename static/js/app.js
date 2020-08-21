@@ -38,7 +38,7 @@ function buildCharts(sample) {
       } 	
     }];
     var bubbleLayout = {
-      title: "OTU Frequency in Selected Subject",
+      title: "OTU Frequency in Selected Test Subject (All OTUs)",
       xaxis: { title: "OTU ID" },
       yaxis: { title: "Sample Value" }
     }; 
@@ -64,7 +64,7 @@ function buildCharts(sample) {
       orientation: "h"
     }];
     var barLayout = {
-      title: "OTU Frequency in Selected Subject",
+      title: "OTU Frequency in Selected Test Subject (Top Ten OTUs)",
       xaxis: { title: "Sample Value" },
       yaxis: { title: "OTU ID" }
     };
@@ -95,7 +95,7 @@ function buildCharts(sample) {
       {
         domain: { x: [0, 1], y: [0, 1] },
         value: washingFrequency,
-        title: { text: "Weekly Washing Frequency" },
+        title: { text: "Selected Test Subject's Weekly Washing Frequency" },
         type: "indicator",
         mode: "gauge+number",
         gauge: {
