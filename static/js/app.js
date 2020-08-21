@@ -66,7 +66,7 @@ function buildCharts(sample) {
     var barLayout = {
       title: `OTU Frequency in Subject ${sample} (Top Ten OTUs)`,
       xaxis: { title: "Sample Value" },
-      yaxis: { title: "OTU ID" }
+      yaxis: { title: "OTU ID", autorange: "reversed" }
     };
 
     // Plot the Bar Chart at "bar"
