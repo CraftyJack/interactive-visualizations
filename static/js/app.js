@@ -36,9 +36,14 @@ function buildCharts(sample) {
         size: sample_values, 
         color: otu_ids,
       } 	
-    }]; 
+    }];
+    var bubbleLayout = {
+      title: "OTU Frequency in Selected Subject",
+      xaxis: { title: "OTU ID" },
+      yaxis: { title: "Sample Value" }
+    }; 
     // Plot the bubble chart at "bubble"
-    Plotly.newPlot("bubble",bubbleData);
+    Plotly.newPlot("bubble",bubbleData, bubbleLayout);
 
     // Build a Bar Chart
     // Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
